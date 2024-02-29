@@ -1,21 +1,14 @@
 .App {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  /* background-color: #282c34; */
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,15 +17,52 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.display{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+  width: 20rem;
+  height: 32rem;
+  border: 1px solid #282c34;
+  margin: 1rem;
+}
+
+.cardTop{
+  width: 100%;
+  height: 50%;
+}
+
+.cardTop img{
+  width: 100%;
+  height: 100%;
+}
+
+.cardBottom{
+  padding-inline: 1rem;
+}
+
+
+/* Navbar File */
+
+.navbar{
+  display: flex;
+  justify-content: center;
+  background-color: #282c34;
+  
+}
+.list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+.list-item{
+  list-style: none;
+  color: aliceblue;
+  font-size: 30px;
+  margin-inline: 20px;
 }
